@@ -1,0 +1,18 @@
+.university {
+    margin: 5 px
+}
+
+.university {
+    float: left;
+    /* color: magenta; */
+}
+
+.float-container {
+    padding: 20px;
+}
+
+.float-child {
+    float: left;
+    padding: 20px;
+  
+}  

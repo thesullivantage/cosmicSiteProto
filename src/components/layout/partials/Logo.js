@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Image from '../../elements/Image';
+import '../../../assets/override.css'
 
 const Logo = ({
   className,
@@ -10,7 +11,8 @@ const Logo = ({
 
   const classes = classNames(
     'brand',
-    className
+    className,
+    'float-container'
   );
 
   return (
@@ -18,15 +20,17 @@ const Logo = ({
       {...props}
       className={classes}
     >
-      <h1 className="m-0">
+      <h1 className="m-0 float-child">
         <Link to="/">
           <Image
-            src={require('./../../../assets/images/logo.svg')}
+            src={require('./../../../assets/images/gsu.png')}
             alt="Open"
             width={32}
             height={32} />
         </Link>
+        
       </h1>
+      <div className="university float-child">Georgia State University</div>
     </div>
   );
 }
