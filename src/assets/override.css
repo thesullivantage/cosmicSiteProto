@@ -16,3 +16,8 @@
     padding: 20px;
   
 }  
+
+.heightFixed {
+    height: 35vw;
+    background-color: white;
+}

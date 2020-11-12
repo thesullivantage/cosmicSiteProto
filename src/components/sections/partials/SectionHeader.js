@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+
 const propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string,
@@ -39,6 +40,8 @@ const SectionHeader = ({
           className={classes}
         >
           <div className="container-xs">
+
+
             {children}
             {data.title &&
               <Component className={
